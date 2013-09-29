@@ -20,7 +20,7 @@ app.configure(function(){
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(require('less-middleware')({
-    src:__dirname+'public',
+    src:__dirname+'/public',
     compress:true
   }));
   app.use(app.router);
